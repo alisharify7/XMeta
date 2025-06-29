@@ -1,0 +1,103 @@
+[build-system]
+requires = ["setuptools>=40", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"src" = "xmeta"}
+
+
+[project]
+name = "xmeta"
+version = "0.1.0"
+description = "**Xmeta** is a Python package to perform CRUD operations on media metadata across various file types like images, videos, audio, and documents."
+readme = "README.md"
+
+authors = [
+    {name = "Ali Sharifi", email = "ALisharifyofficial@gmail.com"},
+]
+
+requires-python = ">=3.12"
+classifiers = [
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Operating System :: OS Independent"
+]
+dependencies = [
+    "ffmpeg-python>=0.2.0",
+    "mutagen>=1.47.0",
+    "piexif>=1.1.3",
+    "pillow>=11.2.1",
+    "pip>=25.1.1",
+    "pymupdf>=1.26.1",
+    "python-magic>=0.4.27",
+]
+
+[dependency-groups]
+dev = [
+    "black>=25.1.0",
+    "mypy>=1.16.1",
+    "flake8>=7.3.0",
+    "pre-commit>=4.2.0",
+    "black>=25.1.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/alisharify7/XMeta"
+"Bug Tracker" = "https://github.com/alisharify7/XMeta/issues"
+"Repository" = "https://github.com/alisharify7/XMeta"
+
+
+
+[tool.black]
+line-length = 88
+target-version = ['py313']
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+  | venv
+  | .venv
+  | data
+)/
+'''
+fast = true
+color = true
+verbose = true
+check = false
+
+
+[tool.flake8]
+max-line-length = 88
+ignore = [
+    "E501",  # Ignore line length warnings
+    "W503",  # Ignore "line break before binary operator" warnings
+    "E203"   # Ignore spacing around operators warnings
+]
+exclude = [
+    ".git",
+    ".tox",
+    ".venv",
+    "build",
+    "dist",
+    "_build"
+]
+max-complexity = 10
+select = [
+    "C",  # Cyclomatic complexity checks
+    "E",  # Errors
+    "F",  # Pyflakes checks
+    "W",  # Warnings
+]
+
+[tool.mypy]
+files = "."
+disallow_untyped-calls = true
+disallow_untyped-defs = true
+strict = true
