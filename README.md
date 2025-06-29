@@ -128,4 +128,4 @@ Proudly maintained by the [Free Developers](https://github.com/free-programmers)
 
 ## 📄 License
 
-This project is licensed under the GNU License.
+This project is licensed under the GPL-3.0 license License.
