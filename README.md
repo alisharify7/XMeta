@@ -1,5 +1,11 @@
 # 💫 XMeta
 
+
+<a href="https://www.coffeete.ir/alisharify7">Donate/Support [Optional]</a>
+
+
+<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/alisharify7/xmeta"> <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/alisharify7/xmeta"> 
+
 <img src="./docs/xmeta2.png" width="400" alt="XMeta Logo">
 
 **XMeta** is a powerful and extensible Python package for performing CRUD operations on media metadata.  
@@ -129,3 +135,8 @@ Proudly maintained by the [Free Developers](https://github.com/free-programmers)
 ## 📄 License
 
 This project is licensed under the GPL-3.0 license License.
+
+
+## Star History
+
+[![Stargazers over time](https://starchart.cc/alisharify7/xmeta.svg?variant=adaptive)](https://starchart.cc/alisharify7/xmeta)
